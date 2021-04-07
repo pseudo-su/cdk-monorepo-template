@@ -1,0 +1,40 @@
+{
+  "name": "@services/api-example",
+  "version": "0.1.0",
+  "bin": {
+    "api-example": "bin/api-example.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk",
+    "verify": "eslint --max-warnings=0 ./",
+    "verify:fix": "eslint --max-warnings=0 --fix ./"
+  },
+  "dependencies": {
+    "@aws-cdk/core": "1.97.0",
+    "@typescript-eslint/eslint-plugin": "~4.21.0",
+    "@typescript-eslint/parser": "~4.21.0",
+    "eslint": "~7.23.0",
+    "eslint-config-prettier": "~8.1.0",
+    "eslint-plugin-import": "~2.22.1",
+    "eslint-plugin-prettier": "~3.3.1",
+    "eslint-plugin-react": "~7.23.1",
+    "eslint-plugin-react-hooks": "~4.2.0",
+    "eslint-plugin-unicorn": "~29.0.0",
+    "prettier": "~2.2.1",
+    "source-map-support": "^0.5.16"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "1.97.0",
+    "@types/jest": "^26.0.10",
+    "@types/node": "10.17.27",
+    "aws-cdk": "^1.97.0",
+    "aws-cdk-local": "^1.65.4",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.2.0",
+    "ts-node": "^9.0.0",
+    "typescript": "~3.9.7"
+  }
+}
