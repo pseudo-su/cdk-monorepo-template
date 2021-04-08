@@ -39,6 +39,24 @@
       "summary": "Used by the pre-commit Git hook. This command invokes lint-staged to reformat staged changes.",
       "autoinstallerName": "repo-tools",
       "shellCommand": "lint-staged"
+    },
+    {
+      "name": "localstack:start",
+      "commandKind": "global",
+      "summary": "Start AWS localstack",
+      "shellCommand": "docker-compose -f localstack.docker-compose.yaml up -d --remove-orphans"
+    },
+    {
+      "name": "localstack:stop",
+      "commandKind": "global",
+      "summary": "Start AWS localstack",
+      "shellCommand": "docker-compose -f localstack.docker-compose.yaml down --remove-orphans"
+    },
+    {
+      "name": "localstack:restart",
+      "commandKind": "global",
+      "summary": "Start AWS localstack",
+      "shellCommand": "docker-compose -f localstack.docker-compose.yaml down --remove-orphans && docker-compose -f localstack.docker-compose.yaml up -d --remove-orphans"
     }
   ],
 
@@ -53,12 +71,12 @@
     //    * A "flag" is a custom command-line parameter whose presence acts as an on/off switch.
     //    */
     //   "parameterKind": "flag",
-    // 
+    //
     //   /**
     //    * (Required) The long name of the parameter.  It must be lower-case and use dash delimiters.
     //    */
     //   "longName": "--my-flag",
-    // 
+    //
     //   /**
     //    * An optional alternative short name for the parameter.  It must be a dash followed by a single
     //    * lower-case or upper-case letter, which is case-sensitive.
@@ -69,7 +87,7 @@
     //    * a short name if you expect the parameter to be needed very often in everyday operations.
     //    */
     //   "shortName": "-m",
-    // 
+    //
     //   /**
     //    * (Required) A long description to be shown in the command-line help.
     //    *
@@ -77,14 +95,14 @@
     //    * documentation can make a big difference for the developer experience in your repo.
     //    */
     //   "description": "A custom flag parameter that is passed to the scripts that are invoked when building projects",
-    // 
+    //
     //   /**
     //    * (Required) A list of custom commands and/or built-in Rush commands that this parameter may
     //    * be used with.  The parameter will be appended to the shell command that Rush invokes.
     //    */
     //   "associatedCommands": ["build", "rebuild"]
     // },
-    // 
+    //
     // {
     //   /**
     //    * (Required) Determines the type of custom parameter.
@@ -93,9 +111,9 @@
     //   "parameterKind": "string",
     //   "longName": "--my-string",
     //   "description": "A custom string parameter for the \"my-global-command\" custom command",
-    // 
+    //
     //   "associatedCommands": ["my-global-command"],
-    // 
+    //
     //   /**
     //    * The name of the argument, which will be shown in the command-line help.
     //    *
@@ -104,13 +122,13 @@
     //    * be comprised of upper-case letters, numbers, and underscores.  It should be kept short.
     //    */
     //   "argumentName": "SOME_TEXT",
-    // 
+    //
     //   /**
     //    * If true, this parameter must be included with the command.  The default is false.
     //    */
     //   "required": false
     // },
-    // 
+    //
     // {
     //   /**
     //    * (Required) Determines the type of custom parameter.
@@ -120,14 +138,14 @@
     //   "parameterKind": "choice",
     //   "longName": "--my-choice",
     //   "description": "A custom choice parameter for the \"my-global-command\" custom command",
-    // 
+    //
     //   "associatedCommands": ["my-global-command"],
-    // 
+    //
     //   /**
     //    * If true, this parameter must be included with the command.  The default is false.
     //    */
     //   "required": false,
-    // 
+    //
     //   /**
     //    * Normally if a parameter is omitted from the command line, it will not be passed
     //    * to the shell command. this value will be inserted by default.  Whereas if a "defaultValue"
@@ -135,7 +153,7 @@
     //    * default value if unspecified.  The value must be one of the defined alternatives.
     //    */
     //   "defaultValue": "vanilla",
-    // 
+    //
     //   /**
     //    * (Required) A list of alternative argument values that can be chosen for this parameter.
     //    */
@@ -146,7 +164,7 @@
     //        * e.g. "vanilla" in "--flavor vanilla".
     //        */
     //       "name": "vanilla",
-    // 
+    //
     //       /**
     //        * A detailed description for the alternative that can be shown in the command-line help.
     //        *
@@ -155,12 +173,12 @@
     //        */
     //       "description": "Use the vanilla flavor (the default)"
     //     },
-    // 
+    //
     //     {
     //       "name": "chocolate",
     //       "description": "Use the chocolate flavor"
     //     },
-    // 
+    //
     //     {
     //       "name": "strawberry",
     //       "description": "Use the strawberry flavor"

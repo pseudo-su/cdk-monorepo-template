@@ -8,7 +8,8 @@
     "start": "next start",
     "verify": "eslint --max-warnings=0 ./",
     "verify:fix": "eslint --max-warnings=0 --fix ./",
-    "cdk": "cdk"
+    "cdk": "cdk",
+    "cdklocal": "cdklocal"
   },
   "dependencies": {
     "@next/env": "10.0.9",
@@ -30,6 +31,8 @@
     "@types/react": "~17.0.3",
     "@typescript-eslint/eslint-plugin": "~4.21.0",
     "@typescript-eslint/parser": "~4.21.0",
+    "aws-cdk": "^1.97.0",
+    "aws-cdk-local": "^1.65.4",
     "eslint": "~7.23.0",
     "eslint-config-prettier": "~8.1.0",
     "eslint-plugin-import": "~2.22.1",
