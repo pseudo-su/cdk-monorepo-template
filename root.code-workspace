@@ -1,0 +1,17 @@
+{
+  "folders": [
+    {
+      "path": "services/api-example"
+    },
+    {
+      "path": "services/site-example-spa"
+    },
+    {
+      "path": "services/site-example-ssr"
+    },
+    {
+      "path": ".",
+      "name": "root"
+    }
+  ]
+}

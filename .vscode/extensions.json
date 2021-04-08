@@ -1,0 +1,17 @@
+{
+  // https://go.microsoft.com/fwlink/?LinkId=827846
+  "recommendations": [
+    "amazonwebservices.aws-toolkit-vscode",
+    "dbaeumer.vscode-eslint",
+    "editorconfig.editorconfig",
+    "eamodio.gitlens",
+    "mhutchie.git-graph",
+    "ms-vsliveshare.vsliveshare-pack",
+    "davidanson.vscode-markdownlint",
+    "42crunch.vscode-openapi",
+    "yzhang.markdown-all-in-one",
+    "pkief.material-icon-theme",
+    "jebbs.plantuml",
+    "stoplight.spectral"
+  ]
+}
