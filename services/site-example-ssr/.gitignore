@@ -36,3 +36,7 @@ yarn-error.log*
 /.serverless
 
 /sls-next-build
+
+# CDK asset staging directory
+.cdk.staging
+cdk.out
