@@ -9,7 +9,8 @@
     "verify": "eslint --max-warnings=0 ./",
     "verify:fix": "eslint --max-warnings=0 --fix ./",
     "cdk": "cdk",
-    "cdklocal": "cdklocal"
+    "cdklocal": "cdklocal",
+    "generate:diagram": "rushx cdk synth && cfn-dia draw.io --cdk-output cdk.out --output-file docs/cdk-diagram.drawio --ci-mode --skip-synth"
   },
   "dependencies": {
     "@next/env": "10.0.9",
@@ -25,6 +26,7 @@
     "@aws-cdk/aws-route53-targets": "~1.97.0",
     "@aws-cdk/aws-s3-deployment": "~1.97.0",
     "@aws-cdk/core": "1.97.0",
+    "@mhlabs/cfn-diagram": "^1.1.24",
     "@sls-next/cdk-construct": "1.19.0-alpha.36",
     "@sls-next/lambda-at-edge": "1.8.0-alpha.31",
     "@types/node": "~14.14.35",
