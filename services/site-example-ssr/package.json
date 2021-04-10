@@ -11,8 +11,9 @@
     "cdk": "cdk",
     "cdk:synth": "cdk synth",
     "cdklocal": "cdklocal",
-    "generate:diagram": "npm-run-all cdk:synth generate:diagram:drawio",
-    "generate:diagram:drawio": "cfn-dia draw.io --cdk-output cdk.out --output-file docs/cdk-diagram.drawio --ci-mode --skip-synth"
+    "generate:diagram": "npm-run-all cdk:synth generate:diagram:drawio generate:diagram:image",
+    "generate:diagram:drawio": "cfn-dia draw.io --cdk-output cdk.out --output-file docs/cdk-diagram.drawio --ci-mode --skip-synth",
+    "generate:diagram:image": "drawio docs/cdk-diagram.drawio -o docs/cdk-diagram.png"
   },
   "dependencies": {
     "@next/env": "10.0.9",
@@ -37,6 +38,7 @@
     "@typescript-eslint/parser": "~4.21.0",
     "aws-cdk": "^1.97.0",
     "aws-cdk-local": "^1.65.4",
+    "draw.io-export": "^0.1.1",
     "eslint": "~7.23.0",
     "eslint-config-prettier": "~8.1.0",
     "eslint-plugin-import": "~2.22.1",

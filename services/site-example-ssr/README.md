@@ -1,3 +1,7 @@
 # website example using NextJS
 
-TODO
+## Deployment
+
+This package uses the AWS CDK to generate cloudformation stacks for deployment to AWS.
+
+![./docs/cdk-diagram.png](./docs/cdk-diagram.png)
