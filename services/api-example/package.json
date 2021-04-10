@@ -26,6 +26,7 @@
     "@aws-cdk/aws-s3": "^1.97.0",
     "@aws-cdk/aws-s3-deployment": "~1.97.0",
     "@aws-cdk/core": "1.97.0",
+    "@jest/globals": "^26.6.2",
     "@mhlabs/cfn-diagram": "^1.1.24",
     "@sls-next/cdk-construct": "1.19.0-alpha.36",
     "@sls-next/lambda-at-edge": "1.8.0-alpha.31",

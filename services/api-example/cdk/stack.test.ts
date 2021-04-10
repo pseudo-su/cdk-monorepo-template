@@ -5,6 +5,7 @@
 // } from "@aws-cdk/assert";
 import * as cdk from "@aws-cdk/core";
 import * as moduleUnderTest from "./api-stack";
+import { test, expect } from "@jest/globals";
 
 test("Empty Stack", () => {
   const app = new cdk.App();
@@ -19,5 +20,5 @@ test("Empty Stack", () => {
   //     MatchStyle.EXACT,
   //   ),
   // );
-  expect(true).toBe(true);
+  expect(stack.stackName).toBe("MyTestStack");
 });
