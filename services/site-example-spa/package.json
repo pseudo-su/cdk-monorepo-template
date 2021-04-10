@@ -6,8 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "verify": "eslint --max-warnings=0 ./",
-    "verify:fix": "eslint --max-warnings=0 --fix ./"
+    "verify": "eslint --max-warnings=0 --ext .ts,.tsx,.js,.jsx ./",
+    "verify:fix": "eslint --fix --max-warnings=0 --ext .ts,.tsx,.js,.jsx ./"
   },
   "dependencies": {
     "@next/env": "10.0.9",
