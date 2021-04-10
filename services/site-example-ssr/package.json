@@ -9,8 +9,10 @@
     "verify": "eslint --max-warnings=0 ./",
     "verify:fix": "eslint --max-warnings=0 --fix ./",
     "cdk": "cdk",
+    "cdk:synth": "cdk synth",
     "cdklocal": "cdklocal",
-    "generate:diagram": "rushx cdk synth && cfn-dia draw.io --cdk-output cdk.out --output-file docs/cdk-diagram.drawio --ci-mode --skip-synth"
+    "generate:diagram": "npm-run-all cdk:synth generate:diagram:drawio",
+    "generate:diagram:drawio": "cfn-dia draw.io --cdk-output cdk.out --output-file docs/cdk-diagram.drawio --ci-mode --skip-synth"
   },
   "dependencies": {
     "@next/env": "10.0.9",
@@ -42,6 +44,7 @@
     "eslint-plugin-react": "~7.23.1",
     "eslint-plugin-react-hooks": "~4.2.0",
     "eslint-plugin-unicorn": "~29.0.0",
+    "npm-run-all": "^4.1.5",
     "prettier": "~2.2.1",
     "source-map-support": "^0.5.16",
     "ts-node": "~9.1.1",
