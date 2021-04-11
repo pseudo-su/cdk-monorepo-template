@@ -7,3 +7,5 @@ node_modules
 cdk.out
 
 docs/*.bak
+
+/dist

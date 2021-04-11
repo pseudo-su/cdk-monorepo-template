@@ -3,10 +3,10 @@ import {
   MethodLoggingLevel,
   RestApi,
 } from "@aws-cdk/aws-apigateway";
-import { PolicyStatement } from "@aws-cdk/aws-iam";
+// import { PolicyStatement } from "@aws-cdk/aws-iam";
 import { Function, Runtime, AssetCode } from "@aws-cdk/aws-lambda";
 import { Construct, Duration, Stack, StackProps } from "@aws-cdk/core";
-import s3 = require("@aws-cdk/aws-s3");
+// import s3 = require("@aws-cdk/aws-s3");
 
 // interface LambdaApiStackProps extends StackProps {
 //   appStackName: string;
@@ -26,7 +26,7 @@ export class LambdaApiStack extends Stack {
 
     this.restApi = new RestApi(this, this.stackName + "RestApi", {
       deployOptions: {
-        stageName: "beta",
+        stageName: "dev",
         metricsEnabled: true,
         loggingLevel: MethodLoggingLevel.INFO,
         dataTraceEnabled: true,
@@ -43,7 +43,7 @@ export class LambdaApiStack extends Stack {
       functionName,
       handler: "handler.handler",
       runtime: Runtime.NODEJS_10_X,
-      code: new AssetCode(`./src`),
+      code: new AssetCode(`./dist`),
       memorySize: 512,
       timeout: Duration.seconds(10),
       environment: {
