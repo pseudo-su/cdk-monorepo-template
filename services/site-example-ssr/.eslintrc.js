@@ -1,3 +1,3 @@
 module.exports = {
-  extends: [require.resolve("@build-tools/base-config-eslint/site-react")],
+  extends: [require.resolve("@tools/base-config-eslint/site-react")],
 };

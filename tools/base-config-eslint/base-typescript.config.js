@@ -1,4 +1,3 @@
-
 module.exports = {
   parserOptions: {
     ecmaVersion: 2021,
@@ -37,17 +36,16 @@ module.exports = {
     jest: true,
   },
   rules: {
-
     "unicorn/prevent-abbreviations": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/no-unused-vars": "off",
 
     // allow setting null on object literals
-    'unicorn/no-null': 'off',
+    "unicorn/no-null": "off",
 
     // Use camelCase for files (and directories - not enforced)
-    'unicorn/filename-case': [
-      'error',
+    "unicorn/filename-case": [
+      "error",
       {
         cases: {
           kebabCase: true,

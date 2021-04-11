@@ -1,11 +1,13 @@
 {
-  "name": "@build-tools/base-config-eslint",
+  "name": "@tools/base-config-eslint",
   "version": "0.0.1",
   "description": "Shared eslint base config",
   "license": "PRIVATE",
   "main": "index.js",
   "scripts": {
-    "build": "echo \"No build required\""
+    "build": "echo \"No build required\"",
+    "verify": "eslint --max-warnings=0 --ext .ts,.tsx,.js,.jsx ./",
+    "verify:fix": "eslint --fix --max-warnings=0 --ext .ts,.tsx,.js,.jsx ./"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "~4.21.0",

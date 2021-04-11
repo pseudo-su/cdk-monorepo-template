@@ -1,4 +1,3 @@
-
 module.exports = {
   parserOptions: {
     ecmaVersion: 2021,
@@ -11,10 +10,7 @@ module.exports = {
 };
 
 module.exports = {
-  plugins: [
-    "eslint-plugin-import",
-    "eslint-plugin-prettier",
-  ],
+  plugins: ["eslint-plugin-import", "eslint-plugin-prettier"],
   extends: [
     "eslint:recommended",
     "plugin:prettier/recommended",
@@ -37,15 +33,14 @@ module.exports = {
     jest: true,
   },
   rules: {
-
     "unicorn/prevent-abbreviations": "off",
 
     // allow setting null on object literals
-    'unicorn/no-null': 'off',
+    "unicorn/no-null": "off",
 
     // Use camelCase for files (and directories - not enforced)
-    'unicorn/filename-case': [
-      'error',
+    "unicorn/filename-case": [
+      "error",
       {
         cases: {
           kebabCase: true,

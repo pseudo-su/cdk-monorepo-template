@@ -34,7 +34,7 @@
     "@aws-cdk/aws-route53-targets": "~1.97.0",
     "@aws-cdk/aws-s3-deployment": "~1.97.0",
     "@aws-cdk/core": "1.97.0",
-    "@build-tools/base-config-eslint": "*",
+    "@tools/base-config-eslint": "*",
     "@jest/globals": "^26.6.2",
     "@mhlabs/cfn-diagram": "^1.1.24",
     "@sls-next/cdk-construct": "1.19.0-alpha.36",

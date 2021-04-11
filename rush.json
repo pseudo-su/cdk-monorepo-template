@@ -381,8 +381,8 @@
    */
   "projects": [
     {
-      "packageName": "@build-tools/base-config-eslint",
-      "projectFolder": "build-tools/base-config-eslint",
+      "packageName": "@tools/base-config-eslint",
+      "projectFolder": "tools/base-config-eslint",
       "reviewCategory": "development"
     },
     {

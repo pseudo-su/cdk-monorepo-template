@@ -1,7 +1,7 @@
 module.exports = {
   root: true,
   extends: [
-    require.resolve("@build-tools/base-config-eslint/base-javascript.config"),
+    require.resolve("@tools/base-config-eslint/base-javascript.config"),
     "plugin:node/recommended-script",
   ],
   rules: {

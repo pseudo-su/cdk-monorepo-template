@@ -27,7 +27,7 @@
     "joi": "^17.4.0"
   },
   "devDependencies": {
-    "@build-tools/base-config-eslint": "*",
+    "@tools/base-config-eslint": "*",
     "ava": "^0.25.0",
     "docdash": "^1.0.1",
     "eslint": "^7.23.0",
