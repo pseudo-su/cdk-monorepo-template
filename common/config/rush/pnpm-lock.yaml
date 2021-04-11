@@ -2,6 +2,7 @@ dependencies:
   '@aws-cdk/assert': 1.97.0
   '@aws-cdk/aws-apigateway': 1.97.0
   '@aws-cdk/aws-certificatemanager': 1.97.0
+  '@aws-cdk/aws-cloudfront': 1.97.0
   '@aws-cdk/aws-cloudfront-origins': 1.97.0
   '@aws-cdk/aws-iam': 1.97.0
   '@aws-cdk/aws-lambda': 1.97.0
@@ -9,18 +10,16 @@ dependencies:
   '@aws-cdk/aws-route53': 1.97.0
   '@aws-cdk/aws-route53-targets': 1.97.0
   '@aws-cdk/aws-s3': 1.97.0
-  '@aws-cdk/aws-s3-deployment': 1.97.0
-  '@aws-cdk/core': 1.97.0
   '@hapi/boom': 9.1.2
   '@jest/globals': 26.6.2
   '@mhlabs/cfn-diagram': 1.1.24
   '@next/env': 10.0.9
   '@rush-temp/api-common': file:projects/api-common.tgz
-  '@rush-temp/api-example': file:projects/api-example.tgz_827ed05008725620bb6d74374f5dd86e
+  '@rush-temp/api-example': file:projects/api-example.tgz_c5c30837b16c6dce20295c291b879b5d
   '@rush-temp/base-config-eslint': file:projects/base-config-eslint.tgz
   '@rush-temp/site-example-spa': file:projects/site-example-spa.tgz
-  '@rush-temp/site-example-ssr': file:projects/site-example-ssr.tgz_8d0d5150262b71ea4fc55d7caa9acf9b
-  '@sls-next/cdk-construct': 1.19.0-alpha.36_d1298ee78327679ad38bd74b9720cbfa
+  '@rush-temp/site-example-ssr': file:projects/site-example-ssr.tgz_1c3328703accdb4fef2cb8ae1977a949
+  '@sls-next/cdk-construct': 1.19.0-alpha.36_2437d9e2dfd4e7f1f65d16b662763912
   '@sls-next/lambda-at-edge': 1.8.0-alpha.31
   '@types/jest': 26.0.22
   '@types/react': 17.0.3
@@ -2169,9 +2168,38 @@ packages:
     dev: false
     resolution:
       integrity: sha512-+iTbntw2IZPb/anVDbypzfQa+ay64MW0Zo8aJ8gZPWMMK6/OubMVb6lUPMagqjOPnmtauXnFCACVl3O7ogjeqQ==
-  /@sls-next/cdk-construct/1.19.0-alpha.36_d1298ee78327679ad38bd74b9720cbfa:
+  /@sls-next/cdk-construct/1.19.0-alpha.36_2437d9e2dfd4e7f1f65d16b662763912:
     dependencies:
       '@aws-cdk/aws-certificatemanager': 1.97.0
+      '@aws-cdk/aws-cloudfront': 1.97.0
+      '@aws-cdk/aws-cloudfront-origins': 1.97.0
+      '@aws-cdk/aws-iam': 1.97.0
+      '@aws-cdk/aws-lambda': 1.97.0
+      '@aws-cdk/aws-route53': 1.97.0
+      '@aws-cdk/aws-route53-targets': 1.97.0
+      '@aws-cdk/aws-s3': 1.97.0
+      '@sls-next/lambda-at-edge': 1.8.0-alpha.31
+      fast-glob: 3.2.5
+      fs-extra: 9.1.0
+    dev: false
+    peerDependencies:
+      '@aws-cdk/aws-certificatemanager': ^1.75.0
+      '@aws-cdk/aws-cloudfront': ^1.75.0
+      '@aws-cdk/aws-cloudfront-origins': ^1.75.0
+      '@aws-cdk/aws-iam': ^1.75.0
+      '@aws-cdk/aws-lambda': ^1.75.0
+      '@aws-cdk/aws-logs': ^1.75.0
+      '@aws-cdk/aws-route53': ^1.75.0
+      '@aws-cdk/aws-route53-targets': ^1.75.0
+      '@aws-cdk/aws-s3': ^1.75.0
+      '@aws-cdk/aws-s3-deployment': ^1.75.0
+      '@aws-cdk/core': ^1.75.0
+    resolution:
+      integrity: sha512-dKr5XnSgIOHhrIMP5mWQaKtbe7AlzWQy8CGdFgxMO0iFmsXFHy2v6SOkpw3McOdJwzBuypbjWQshVdyKlkBWjw==
+  /@sls-next/cdk-construct/1.19.0-alpha.36_fc52383fe8fb3b2a8fd34c179d62a67c:
+    dependencies:
+      '@aws-cdk/aws-certificatemanager': 1.97.0
+      '@aws-cdk/aws-cloudfront': 1.97.0
       '@aws-cdk/aws-cloudfront-origins': 1.97.0
       '@aws-cdk/aws-iam': 1.97.0
       '@aws-cdk/aws-lambda': 1.97.0
@@ -13138,7 +13166,7 @@ packages:
       integrity: sha512-slNwU+oh8xhpkmrTBqumOJBYRItNRuFLdvYwrX9yabqmDtQInKiCYCGT8X9PJjJTdMpVavqu0qLNf2wkJQV2mw==
       tarball: file:projects/api-common.tgz
     version: 0.0.0
-  file:projects/api-example.tgz_827ed05008725620bb6d74374f5dd86e:
+  file:projects/api-example.tgz_c5c30837b16c6dce20295c291b879b5d:
     dependencies:
       '@aws-cdk/assert': 1.97.0_jest@26.6.3
       '@aws-cdk/aws-apigateway': 1.97.0
@@ -13152,7 +13180,7 @@ packages:
       '@aws-cdk/core': 1.97.0
       '@jest/globals': 26.6.2
       '@mhlabs/cfn-diagram': 1.1.24
-      '@sls-next/cdk-construct': 1.19.0-alpha.36_d1298ee78327679ad38bd74b9720cbfa
+      '@sls-next/cdk-construct': 1.19.0-alpha.36_fc52383fe8fb3b2a8fd34c179d62a67c
       '@sls-next/lambda-at-edge': 1.8.0-alpha.31
       '@types/jest': 26.0.22
       '@types/node': 10.17.27
@@ -13182,6 +13210,7 @@ packages:
     name: '@rush-temp/api-example'
     peerDependencies:
       '@aws-cdk/aws-certificatemanager': '*'
+      '@aws-cdk/aws-cloudfront': '*'
       '@aws-cdk/aws-route53': '*'
     resolution:
       integrity: sha512-fW9u19xqQG+A/4EC1sDpXoBQD7pQaLNa2mmsfEm0GvDX/5tBjquNlAJQJ9ETQGCuzuKVz+68aBS23PMhc5g96g==
@@ -13206,11 +13235,18 @@ packages:
     version: 0.0.0
   file:projects/site-example-spa.tgz:
     dependencies:
+      '@aws-cdk/aws-cloudfront': 1.97.0
+      '@aws-cdk/aws-s3': 1.97.0
+      '@aws-cdk/aws-s3-deployment': 1.97.0
+      '@aws-cdk/core': 1.97.0
+      '@jest/globals': 26.6.2
+      '@mhlabs/cfn-diagram': 1.1.24
       '@next/env': 10.0.9
       '@types/node': 14.14.37
       '@types/react': 17.0.3
       '@typescript-eslint/eslint-plugin': 4.21.0_35a5aea22e0e38f5e47be9122770cb30
       '@typescript-eslint/parser': 4.21.0_eslint@7.23.0+typescript@4.2.3
+      draw.io-export: 0.1.1
       eslint: 7.23.0
       eslint-config-prettier: 8.1.0_eslint@7.23.0
       eslint-plugin-import: 2.22.1_eslint@7.23.0
@@ -13219,17 +13255,19 @@ packages:
       eslint-plugin-react-hooks: 4.2.0_eslint@7.23.0
       eslint-plugin-unicorn: 29.0.0_eslint@7.23.0
       next: 10.0.9_5347ba9dae72bc17e95cc7756ff465f1
+      npm-run-all: 4.1.5
       prettier: 2.2.1
       react: 17.0.1
       react-dom: 17.0.1_react@17.0.1
+      ts-node: 9.1.1_typescript@4.2.3
       typescript: 4.2.3
     dev: false
     name: '@rush-temp/site-example-spa'
     resolution:
-      integrity: sha512-mRWySPiyNHt3/+T2aPDi/kp8mFUSZBPiwn8xYY8qIwkuSj6FIJ0/EmW34XZ9C02ZOFJMOlc5184Omitj0mOwcQ==
+      integrity: sha512-F1e9Vkz33jREXDpocDYdXFTaGSUJzrWhEugE2ukbT4Sz8CGulQ26oP20XYHFick7OUp5WZJI6MhqxnG4LnqMxg==
       tarball: file:projects/site-example-spa.tgz
     version: 0.0.0
-  file:projects/site-example-ssr.tgz_8d0d5150262b71ea4fc55d7caa9acf9b:
+  file:projects/site-example-ssr.tgz_1c3328703accdb4fef2cb8ae1977a949:
     dependencies:
       '@aws-cdk/aws-certificatemanager': 1.97.0
       '@aws-cdk/aws-cloudfront-origins': 1.97.0
@@ -13241,23 +13279,15 @@ packages:
       '@jest/globals': 26.6.2
       '@mhlabs/cfn-diagram': 1.1.24
       '@next/env': 10.0.9
-      '@sls-next/cdk-construct': 1.19.0-alpha.36_d1298ee78327679ad38bd74b9720cbfa
+      '@sls-next/cdk-construct': 1.19.0-alpha.36_fc52383fe8fb3b2a8fd34c179d62a67c
       '@sls-next/lambda-at-edge': 1.8.0-alpha.31
       '@types/jest': 26.0.22
       '@types/node': 14.14.37
       '@types/react': 17.0.3
-      '@typescript-eslint/eslint-plugin': 4.21.0_35a5aea22e0e38f5e47be9122770cb30
-      '@typescript-eslint/parser': 4.21.0_eslint@7.23.0+typescript@4.2.3
       aws-cdk: 1.97.0
       aws-cdk-local: 1.65.4
       draw.io-export: 0.1.1
       eslint: 7.23.0
-      eslint-config-prettier: 8.1.0_eslint@7.23.0
-      eslint-plugin-import: 2.22.1_eslint@7.23.0
-      eslint-plugin-prettier: 3.3.1_b12b1e2728f2b373ebd5879b14325d0d
-      eslint-plugin-react: 7.23.1_eslint@7.23.0
-      eslint-plugin-react-hooks: 4.2.0_eslint@7.23.0
-      eslint-plugin-unicorn: 29.0.0_eslint@7.23.0
       jest: 26.6.3_ts-node@9.1.1
       next: 10.0.9_5347ba9dae72bc17e95cc7756ff465f1
       npm-run-all: 4.1.5
@@ -13272,6 +13302,7 @@ packages:
     id: file:projects/site-example-ssr.tgz
     name: '@rush-temp/site-example-ssr'
     peerDependencies:
+      '@aws-cdk/aws-cloudfront': '*'
       '@aws-cdk/aws-iam': '*'
       '@aws-cdk/aws-s3': '*'
     resolution:
@@ -13283,6 +13314,7 @@ specifiers:
   '@aws-cdk/assert': 1.97.0
   '@aws-cdk/aws-apigateway': ^1.97.0
   '@aws-cdk/aws-certificatemanager': ~1.97.0
+  '@aws-cdk/aws-cloudfront': ^1.97.0
   '@aws-cdk/aws-cloudfront-origins': ~1.97.0
   '@aws-cdk/aws-iam': ^1.97.0
   '@aws-cdk/aws-lambda': ^1.97.0
@@ -13290,8 +13322,6 @@ specifiers:
   '@aws-cdk/aws-route53': ~1.97.0
   '@aws-cdk/aws-route53-targets': ~1.97.0
   '@aws-cdk/aws-s3': ^1.97.0
-  '@aws-cdk/aws-s3-deployment': ~1.97.0
-  '@aws-cdk/core': 1.97.0
   '@hapi/boom': ^9.1.2
   '@jest/globals': ^26.6.2
   '@mhlabs/cfn-diagram': ^1.1.24
