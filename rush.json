@@ -381,6 +381,16 @@
    */
   "projects": [
     {
+      "packageName": "@build-tools/base-config-eslint",
+      "projectFolder": "build-tools/base-config-eslint",
+      "reviewCategory": "development"
+    },
+    {
+      "packageName": "@libs/api-common",
+      "projectFolder": "libs/api-common",
+      "reviewCategory": "production"
+    },
+    {
       "packageName": "@services/api-example",
       "projectFolder": "services/api-example",
       "reviewCategory": "production"

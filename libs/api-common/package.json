@@ -1,0 +1,51 @@
+{
+  "name": "@libs/api-common",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Common library for APIs",
+  "license": "UNLICENSED",
+  "main": "src/index.js",
+  "files": [
+    "config/",
+    "src/"
+  ],
+  "scripts": {
+    "build": "echo \"No build required\"",
+    "test": "npm run test:unit",
+    "verify": "eslint --max-warnings=0 --ext .ts,.tsx,.js,.jsx ./",
+    "verify:fix": "eslint --fix --max-warnings=0 --ext .ts,.tsx,.js,.jsx ./",
+    "test:check-coverage": "nyc check-coverage",
+    "test:report": "npm run test:unit:report",
+    "test:unit": "ava './src/**/*.test.js'",
+    "test:unit:report": "nyc ava --tap './src/**/*.test.js'",
+    "test:unit:snap": "ava --update-snapshots './src/**/*.test.js'"
+  },
+  "dependencies": {
+    "@hapi/boom": "^9.1.2",
+    "aws-sdk": "2.637.0",
+    "aws-xray-sdk": "2.5.0",
+    "joi": "^17.4.0"
+  },
+  "devDependencies": {
+    "@build-tools/base-config-eslint": "*",
+    "ava": "^0.25.0",
+    "docdash": "^1.0.1",
+    "eslint": "^7.23.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-prettier": "^3.3.0",
+    "eslint-plugin-unicorn": "^29.0.0",
+    "jest": "^26.6.3",
+    "npm-run-all": "4.1.5",
+    "nyc": "^13.1.0",
+    "prettier": "2.2.1",
+    "proxyquire": "^2.0.1",
+    "sinon": "9.0.0"
+  },
+  "engines": {
+    "node": "^14.15",
+    "npm": "DO_NOT_USE",
+    "pnpm": ">=4.14.4",
+    "yarn": "DO_NOT_USE"
+  }
+}

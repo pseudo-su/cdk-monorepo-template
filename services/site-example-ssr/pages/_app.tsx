@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 
-function MyApp({ Component, pageProps }) {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function MyApp({ Component, pageProps }: { Component: any; pageProps: any }) {
   return <Component {...pageProps} />;
 }
 

@@ -34,6 +34,17 @@
       "allowWarningsInSuccessfulBuild": false
     },
     {
+      "name": "test",
+      "commandKind": "bulk",
+      "summary": "Runs tests",
+      "description": "Runs tests",
+      "safeForSimultaneousRushProcesses": true,
+      "enableParallelism": true,
+      "ignoreDependencyOrder": true,
+      "ignoreMissingScript": true,
+      "allowWarningsInSuccessfulBuild": true
+    },
+    {
       "name": "verify-staged",
       "commandKind": "global",
       "summary": "Used by the pre-commit Git hook. This command invokes lint-staged to reformat staged changes.",

@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "verify": "eslint --max-warnings=0 --ext .ts,.tsx,.js,.jsx ./",
     "verify:fix": "eslint --fix --max-warnings=0 --ext .ts,.tsx,.js,.jsx ./"
