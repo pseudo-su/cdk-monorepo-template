@@ -11,12 +11,14 @@
     "start": "next start",
     "verify": "eslint --max-warnings=0 --ext .ts,.tsx,.js,.jsx ./",
     "verify:fix": "eslint --fix --max-warnings=0 --ext .ts,.tsx,.js,.jsx ./",
+    "package": "cdk synth",
     "cdk": "cdk",
     "cdk:synth": "cdk synth",
     "cdklocal": "cdklocal",
-    "generate:diagram": "npm-run-all cdk:synth generate:diagram:drawio generate:diagram:image",
-    "generate:diagram:drawio": "cfn-dia draw.io --cdk-output cdk.out --output-file docs/cdk-diagram.drawio --ci-mode --skip-synth",
-    "generate:diagram:image": "drawio docs/cdk-diagram.drawio -o docs/cdk-diagram.png"
+    "codegen": "npm-run-all codegen:diagram",
+    "codegen:diagram": "npm-run-all codegen:diagram:drawio codegen:diagram:image",
+    "codegen:diagram:drawio": "cfn-dia draw.io --output-file docs/cdk-diagram.drawio --ci-mode",
+    "codegen:diagram:image": "drawio docs/cdk-diagram.drawio -o docs/cdk-diagram.png"
   },
   "dependencies": {
     "@next/env": "10.0.9",
@@ -32,8 +34,8 @@
     "@aws-cdk/aws-route53-targets": "~1.97.0",
     "@aws-cdk/aws-s3-deployment": "~1.97.0",
     "@aws-cdk/core": "1.97.0",
-    "@jest/globals": "^26.6.2",
     "@build-tools/base-config-eslint": "*",
+    "@jest/globals": "^26.6.2",
     "@mhlabs/cfn-diagram": "^1.1.24",
     "@sls-next/cdk-construct": "1.19.0-alpha.36",
     "@sls-next/lambda-at-edge": "1.8.0-alpha.31",

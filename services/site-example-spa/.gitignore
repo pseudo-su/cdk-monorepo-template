@@ -36,3 +36,5 @@ yarn-error.log*
 /.serverless
 
 /sls-next-build
+
+/cdk.out
