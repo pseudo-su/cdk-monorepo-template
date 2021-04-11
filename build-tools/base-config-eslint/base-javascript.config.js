@@ -36,15 +36,6 @@ module.exports = {
     browser: true,
     jest: true,
   },
-  ignorePatterns: [
-    "**/node_modules/**",
-    "**/dist/**",
-    "**/test-reports/**",
-    "**/vendor/**",
-    "**/cdk.out/**",
-    "**/build/**",
-    "**/.next/**",
-  ],
   rules: {
 
     "unicorn/prevent-abbreviations": "off",
